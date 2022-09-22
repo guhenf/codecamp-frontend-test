@@ -23,7 +23,6 @@ export default createGlobalStyle`
     min-width: 100vw;
     min-height: 100vh;
 	margin: 0 auto;
-	padding: 2rem;
 	text-align: center;
     display: flex;
     justify-content: center;
@@ -51,4 +50,5 @@ body {
 	min-width: 320px;
 	min-height: 100vh;
 }
+
 `

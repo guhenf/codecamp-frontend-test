@@ -1,5 +1,5 @@
-import {} from '../components/signUp'
+import { Dashboard } from '../components/home'
 
 export const HomeScreen = () => {
-	return // <Home/>
+	return <Dashboard />
 }
