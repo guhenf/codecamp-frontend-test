@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const StyledContainer = styled.div`
 	border-radius: 2px;
 	width: 480px;
+
+	margin-bottom: 1.5em;
 `
 export const StyledTop = styled.div`
 	background: var(--black);
@@ -26,6 +28,8 @@ export const StyledBox = styled.div`
 		height: 1.5em;
 
 		margin-left: 10px;
+
+		cursor: pointer;
 	}
 `
 

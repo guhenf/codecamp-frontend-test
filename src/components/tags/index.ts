@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 import { ButtonProps } from '../../interfaces'
 
+export const StyledDiv = styled.div`
+	background: var(--white);
+	width: 480px;
+	height: 200px;
+	padding: 2em;
+	border: 1px solid var(--secundary-gray);
+`
+
 export const StyledButton = styled.button<ButtonProps>`
 	background: ${(props) =>
 		props.empty ? 'var(--primary-gray)' : 'var(--black)'};
@@ -24,6 +32,7 @@ export const StyledInput = styled.input`
 	border: var(--secundary-gray) 1.5px solid;
 	border-radius: 4px;
 	padding: 0.3em;
+	width: 100%;
 `
 export const StyledArea = styled.textarea`
 	background: #ffffff;
@@ -31,6 +40,7 @@ export const StyledArea = styled.textarea`
 	border-radius: 4px;
 	padding: 0.3em;
 	height: 6em;
+	width: 100%;
 `
 
 export const StyledLabel = styled.label`

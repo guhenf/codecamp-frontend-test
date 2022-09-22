@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react'
-import { StyledDiv, StyledForm } from './style'
+import { StyledForm } from './style'
 import { useNavigate } from 'react-router-dom'
-import { StyledButton, StyledH3, StyledInput, StyledLabel } from '../tags'
+import {
+	StyledButton,
+	StyledDiv,
+	StyledH3,
+	StyledInput,
+	StyledLabel,
+} from '../tags'
 
 export const SignUp = () => {
 	const navigate = useNavigate()
@@ -11,8 +17,7 @@ export const SignUp = () => {
 
 	const handleSubmit = (event: any): void => {
 		event.preventDefault()
-		// precisarei do username na pagina de posts
-		// localStorage.setItem('codeleapUsername', username)
+		localStorage.setItem('codeleapUsername', username)
 		navigate('/dashboard')
 	}
 

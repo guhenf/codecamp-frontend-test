@@ -34,7 +34,7 @@ export default createGlobalStyle`
 	font-weight: 400;
 
 	color-scheme: light dark;
-	background-color: #DDDDDD;
+	background-color: var(--primary-gray);
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -49,6 +49,10 @@ body {
 	place-items: center;
 	min-width: 320px;
 	min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 `
