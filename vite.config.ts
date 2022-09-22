@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/codecamp-frontend-test/',
+	base: process.env.NODE_ENV === 'production' ? '/codecamp-frontend-test/' : '/',
 	plugins: [react()],
 })

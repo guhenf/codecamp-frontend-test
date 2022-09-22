@@ -8,7 +8,7 @@ function App() {
 		<div className="App">
 			<GlobalStyle />
 			<Routes>
-				<Route path="/" element={<SignUpScreen />} />
+				<Route index element={<SignUpScreen />} />
 				<Route path="/dashboard" element={<HomeScreen />} />
 			</Routes>
 		</div>
