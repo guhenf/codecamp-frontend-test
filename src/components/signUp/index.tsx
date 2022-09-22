@@ -1,8 +1,13 @@
 import { useEffect, useState } from 'react'
-import { StyledInput } from '../input'
-import { StyledDiv, StyledForm, StyledLabel, StyledP } from './style'
+import { StyledForm } from './style'
 import { useNavigate } from 'react-router-dom'
-import { StyledButton } from '../button'
+import {
+	StyledButton,
+	StyledDiv,
+	StyledH3,
+	StyledInput,
+	StyledLabel,
+} from '../tags'
 
 export const SignUp = () => {
 	const navigate = useNavigate()
@@ -12,8 +17,7 @@ export const SignUp = () => {
 
 	const handleSubmit = (event: any): void => {
 		event.preventDefault()
-		// precisarei do username na pagina de posts
-		// localStorage.setItem('codeleapUsername', username)
+		localStorage.setItem('codeleapUsername', username)
 		navigate('/dashboard')
 	}
 
@@ -27,15 +31,22 @@ export const SignUp = () => {
 
 	return (
 		<StyledDiv>
-			<StyledP>Welcome to CodeLeap Network!</StyledP>
+			<StyledH3>Welcome to CodeLeap Network!</StyledH3>
 			<StyledForm onSubmit={handleSubmit}>
-				<StyledLabel>Please enter your username</StyledLabel>
+				<StyledLabel style={{ marginBottom: 5 }}>
+					Please enter your username
+				</StyledLabel>
 				<StyledInput
 					type="text"
 					placeholder="John Doe"
 					onChange={(e) => setUsername(e.target.value)}
 				/>
-				<StyledButton type="submit" disabled={empty} empty={empty}>
+				<StyledButton
+					style={{ top: 75 }}
+					type="submit"
+					disabled={empty}
+					empty={empty}
+				>
 					ENTER
 				</StyledButton>
 			</StyledForm>

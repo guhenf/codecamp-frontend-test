@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { HomeScreen } from './pages/homeScreen'
 import { SignUpScreen } from './pages/signUpScreen'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 		<div className="App">
 			<Routes>
 				<Route path="/" element={<SignUpScreen />} />
-				<Route path="/dashboard" element={<h1>Dashboard - Home</h1>} />
+				<Route path="/dashboard" element={<HomeScreen />} />
 			</Routes>
 		</div>
 	)

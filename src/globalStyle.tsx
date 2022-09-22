@@ -23,7 +23,6 @@ export default createGlobalStyle`
     min-width: 100vw;
     min-height: 100vh;
 	margin: 0 auto;
-	padding: 2rem;
 	text-align: center;
     display: flex;
     justify-content: center;
@@ -35,7 +34,7 @@ export default createGlobalStyle`
 	font-weight: 400;
 
 	color-scheme: light dark;
-	background-color: #DDDDDD;
+	background-color: var(--primary-gray);
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -51,4 +50,9 @@ body {
 	min-width: 320px;
 	min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 `
